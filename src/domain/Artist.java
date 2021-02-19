@@ -3,7 +3,7 @@ package domain;
 /**
  * A subclass of Employee that represent an artist
  * @see Employee
- * @author OLEX
+ * @author legendoru
  */
 public class Artist extends Employee {
     

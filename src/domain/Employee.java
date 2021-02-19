@@ -2,7 +2,7 @@ package domain;
 
 /**
  * A class that represent an employee
- * @author OLEX
+ * @author legendoru
  */
 public class Employee {
     

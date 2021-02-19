@@ -3,7 +3,7 @@ package domain;
 /**
  * A subclass of Artist that represent an editor
  * @see Artist
- * @author OLEX
+ * @author legendoru
  */
 public class Editor extends Artist {
     

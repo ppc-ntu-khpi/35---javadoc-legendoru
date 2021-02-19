@@ -3,7 +3,7 @@ package domain;
 /**
  * A subclass of Employee that represent a manager
  * @see Employee
- * @author OLEX
+ * @author legendoru
  */
 public class Manager extends Employee {
 
