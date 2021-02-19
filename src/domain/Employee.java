@@ -1,6 +1,15 @@
 package domain;
-public class Employee {
 
+/**
+ * A class that represent an employee
+ * @author OLEX
+ */
+public class Employee {
+    
+    /**
+     * Displays information about employee
+     * @return string with information about employee
+     */
     @Override
     public String toString() {
         return "\nEmployee ID= " + ID + "\nName= " + name + "\nJobTitle= " + jobTitle + "\nLevel= " + level + "\nDept= " + dept;
@@ -13,7 +22,14 @@ public class Employee {
     private String dept;
 
    // private static int employeesCount = 0;
-
+    
+    /**
+     * Constructor with parameters
+     * @param name name of employee
+     * @param jobTitle job title of employee
+     * @param level level of employee
+     * @param dept employee's department
+     */
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
         setName(name);
@@ -29,26 +45,46 @@ public class Employee {
         }
         this.dept = dept;
     }
-
+    
+    /**
+     * Constructor
+     * Initialize ID of employee as integer ranging from 1 to 1000
+     */
     public Employee() {
         ID = (int)(Math.random()*1000);
 //        if (ID > 10000) {
 //            throw new NumberFormatException("ERROR! Employee's ID cannot be greater than 10000. Employee is not created!");
 //        }
     }
-
+    
+    /**
+     * Method that defines a job title of employee
+     * @param job job title
+     */
     public void setJobTitle(String job) {
         jobTitle = job;
     }
-
+    
+    /**
+     * Method that gets a job title of employee
+     * @return job title
+     */
     public String getJobTitle() {
         return jobTitle;
     }
-
+    
+    /**
+     * Method that gets a name of employee
+     * @return name of employee
+     */
     public String getName() {
         return name;
     }
-
+    
+    /**
+     * Method that defines a level of employee
+     * @param level level of emloyee
+     */
     public void setLevel(int level) {
         switch (level) {
             case 1:
@@ -60,19 +96,35 @@ public class Employee {
                 this.level = 1;
         }
     }
-
+    
+    /**
+     * Method that gets a level of employee
+     * @return level of employee
+     */
     public int getLevel() {
         return level;
     }
-
+    
+    /**
+     * Method that gets a department of employee
+     * @return department of employee
+     */
     public String getDept() {
         return dept;
     }
-
+    
+    /**
+     * Method that defines a department of employee
+     * @param dept department of employee
+     */
     public void setDept(String dept) {
         this.dept = dept;
     }
-
+    
+    /**
+     * Method that defines a name of employee
+     * @param name name of employee
+     */
     public void setName(String name) {
 //        boolean correctName = true;
 //        for (int i = 0; i < name.length(); i++) {
